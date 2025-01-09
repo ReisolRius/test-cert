@@ -2,6 +2,7 @@
   "name": "test-cert",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ReisolRius.github.io/test-cert",
   "dependencies": {
     "cors": "^2.8.5",
     "cra-template": "1.2.0",
@@ -18,7 +19,10 @@
     "dev": "NODE_ENV=development webpack serve --config webpack.config.js",
     "build": "set NODE_ENV=production && webpack --config webpack.config.js",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
