@@ -9,7 +9,7 @@ import Pay from './components/Pay/Pay'
 
 function App() {
   return (
-    <BrowserRouter basename='/testCert'>
+    <BrowserRouter basename='/test-cert'>
       <div className='container'>
         <Routes>
           <Route path='/' element={<Main/>} />
